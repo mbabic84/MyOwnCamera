@@ -6,43 +6,20 @@
     android:layout_height="match_parent"
     tools:context="cz.kralicinora.myowncamera.Main">
 
-    <TextureView
-        android:id="@+id/main_textureview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/main_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="false" />
 
-    <LinearLayout
+    <ImageButton
+        android:id="@+id/main_camerabutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true">
-
-        <ImageButton
-            android:id="@+id/main_savebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:layout_margin="10dp"
-            android:background="@color/colorPrimary"
-            android:src="@android:drawable/ic_input_add" />
-
-        <ImageButton
-            android:id="@+id/main_discardbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:layout_margin="10dp"
-            android:background="@color/colorPrimary"
-            android:src="@android:drawable/ic_delete" />
-
-        <ImageButton
-            android:id="@+id/main_capturebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:layout_margin="10dp"
-            android:background="@color/colorPrimary"
-            android:src="@android:drawable/ic_menu_camera"/>
-    </LinearLayout>
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:src="@android:drawable/ic_menu_camera" />
 </RelativeLayout>
