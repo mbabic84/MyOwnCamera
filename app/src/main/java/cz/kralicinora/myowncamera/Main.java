@@ -30,8 +30,9 @@ public class Main extends Activity {
                 Intent i = new CameraActivity.IntentBuilder(Main.this)
                         .facing(Facing.BACK)
                         .to(new File(Environment.getExternalStorageDirectory(), new Date().getTime() + ".jpg"))
-                        .debug()
                         .zoomStyle(ZoomStyle.SEEKBAR)
+                        .skipConfirm()
+                        .allowSwitchFlashMode()
                         .build();
 
                 startActivityForResult(i, 89);
