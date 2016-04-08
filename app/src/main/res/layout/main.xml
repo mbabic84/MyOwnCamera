@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context="cz.kralicinora.myowncamera.Main">
 
-    <TextView
-        android:id="@+id/main_textview"
+    <ImageView
+        android:id="@+id/main_imagepreview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:singleLine="false" />
+        android:scaleType="center"/>
 
     <ImageButton
         android:id="@+id/main_camerabutton"
@@ -22,4 +22,15 @@
         android:background="@color/colorPrimary"
         android:padding="15dp"
         android:src="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/main_savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/main_camerabutton"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:src="@android:drawable/ic_menu_save"/>
 </RelativeLayout>
